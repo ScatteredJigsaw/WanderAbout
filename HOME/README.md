@@ -1,11 +1,11 @@
 ## Accessing our API
 
 ### Get authentication token
-Endpoint: http://localhost:8000/api-token-auth/ <br/>
+Endpoint: https://wander-about.herokuapp.com/api-token-auth/ <br/>
 Parameters required : username, password <br/>
 Sample body: json { "username": "admin", "password": "password" } <br/>
 ### Get / Post user
-Endpoint : http://localhost/api/user/ <br/>
+Endpoint :https://wander-about.herokuapp.com/api/user/ <br/>
 #### GET <br/>
 parameters: auth token as header <br/>
 sample header: json { "Authorization": "TOKEN <token>" } <br/>
