@@ -3,15 +3,15 @@ from rest_framework import serializers # Official Documentation here https://www
 from rest_framework.validators import UniqueTogetherValidator
 
 #Serializing is a mechanism for translating Django Models into other formats. Here we are mapping our user model to JSON
-class UserSerializer(serializers.ModelSerializer):
+class UserSerializer(serializers.ModelSerializer): # Creating a class
 
-    def create(self, validated_data):
+    def create(self, validated_data): 
         user = User.objects.create_user(**validated_data)
         return user
 
     class Meta: #Meta classes instances are classes itself.
         model = User
-        fields = (
+        fields = (  #Data of our user
             'username',
             'first_name',
             'last_name',
